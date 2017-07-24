@@ -1,0 +1,45 @@
+.container {
+  width: 100%;
+  .stickyContainer {
+    overflow: hidden;
+    width: 100%;
+    border: 1px #222 solid;
+    .scrollingContent {
+      margin: 0 0 -15px 85px;
+      position: relative;
+      table {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 100%;
+        display: block;
+        background: #fff;
+        font-size: 18px;
+        tr {
+          td {
+            height: 40px;
+            padding: 0 0 0 12px;
+            &.stickyCol {
+              position: absolute;
+              left: -85px;
+              width: 85px;
+              &:first-child {
+                padding-top: 7px;
+              }
+            }
+          }
+        }
+      }
+      thead {
+        font-weight: bold;
+        font-size: 18px;
+        tr {
+          td {
+            background: #29a325;
+            color: #fff;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
